@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PL Manhwa Site</title>
+  <title>PL Manhwa Free Site</title>
 
   <style>
     body {
@@ -14,7 +14,7 @@
     /* HEADER */
     .header {
       text-align: center;
-      padding: 80px 20px 40px;
+      padding: 80px 20px;
       background: url('https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
@@ -26,7 +26,8 @@
       content: "";
       position: absolute;
       top: 0; left: 0;
-      width: 100%; height: 100%;
+      width: 100%;
+      height: 100%;
       background: rgba(59,130,246,0.6);
     }
 
@@ -45,7 +46,7 @@
       margin-top: 10px;
     }
 
-    /* CONTAINER */
+    /* INTRO BOX */
     .container {
       max-width: 1100px;
       margin: auto;
@@ -57,4 +58,61 @@
       padding: 20px;
       border-radius: 15px;
       margin-top: -30px;
-      box-shadow: 0 10px 20px r
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #2563eb;
+    }
+
+    /* HORIZONTAL SCROLL */
+    .scroll {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    .card {
+      min-width: 200px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    .tag {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: #22c55e;
+      color: white;
+      font-size: 10px;
+      padding: 4px 6px;
+      border-radius: 6px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER (HINDI MAWAWALA) -->
+  <div class="header">
+    <div class="header-content">
+      <h1>PL MANHWA FREE SITE</h1>
+      <p>Read Manhwa for F
