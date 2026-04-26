@@ -1,11 +1,49 @@
-# plsclarin.github.io
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
-</head>
-<body>
-  <h1>Hello! Gumagana na website ko 🚀</h1>
-  <p>GitHub Pages is working!</p>
-</body>
-</html>
+  <title>PL Manhwa Site</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+      color: #1f2937;
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      padding: 70px 20px;
+      background: url('https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(59,130,246,0.6);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      font-size: 55px;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* CONTAINER */
+    .container {
