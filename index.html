@@ -1,20 +1,118 @@
-<h2>📚 Manhwa List</h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manhwa Free Site</title>
 
-<div class="grid">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #2b2b2b;
 
-  <div class="card">
-    <img src="https://i.imgur.com/w6GNAiP.jpeg" alt="Manhwa 1">
-    <p>Manhwa 1</p>
+      /* Tulip background */
+      background: url('https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      background: rgba(255, 255, 255, 0.75);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      color: #7c3aed;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro {
+      background: rgba(255,255,255,0.8);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(10px);
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      color: #6d28d9;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.85);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* 🔥 LANDSCAPE FIX */
+    .card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .card p {
+      margin: 10px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+  <div class="header">
+    <h1>✨ MANHWA FREE SITE ✨</h1>
+    <p>This website you can read a Manhwa for Free</p>
   </div>
 
-  <div class="card">
-    <img src="https://i.imgur.com/nEkNUn9.jpeg" alt="Manhwa 2">
-    <p>Manhwa 2</p>
-  </div>
+  <div class="container">
 
-  <div class="card">
-    <img src="https://i.imgur.com/VQONx70.jpeg" alt="Manhwa 3">
-    <p>Manhwa 3</p>
-  </div>
+    <div class="intro">
+      <h2>🌸 Welcome</h2>
+      <p>
+        This website you can read a Manhwa for Free.
+        Enjoy reading different stories!
+      </p>
+    </div>
 
-</div>
+    <h2>📚 Manhwa List</h2>
+
+    <div class="grid">
