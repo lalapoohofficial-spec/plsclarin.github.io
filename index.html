@@ -1,65 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Manhwa Site</title>
+  <title>Manhwa Site</title>
+
   <style>
     body {
-      font-family: Arial;
-      background: #111;
-      color: white;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+      color: #2b2b2b;
     }
 
     .header {
       text-align: center;
-      padding: 30px;
-      background: #222;
+      padding: 50px 20px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.6);
+    }
+
+    .header h1 {
+      font-size: 40px;
+      color: #6b21a8;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      opacity: 0.8;
     }
 
     .container {
-      padding: 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 20px;
+    }
+
+    .intro {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(12px);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     }
 
     .cover {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
     .chapter {
-      background: #333;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
       padding: 15px;
       margin: 10px 0;
-      border-radius: 8px;
+      border-radius: 12px;
       cursor: pointer;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.5);
     }
 
     .chapter:hover {
-      background: #444;
+      transform: scale(1.02);
+      background: rgba(255, 255, 255, 0.8);
     }
+
   </style>
 </head>
 
 <body>
 
-<div class="header">
-  <h1>🔥 My Manhwa Site</h1>
-  <p>Welcome sa story ko</p>
-</div>
+  <div class="header">
+    <h1>🌸 Manhwa Site</h1>
+    <p>Welcome sa world ng stories</p>
+  </div>
 
-<div class="container">
+  <div class="container">
 
-  <img class="cover" src="https://via.placeholder.com/800x400" alt="cover">
+    <div class="intro">
+      <h2>✨ Intro</h2>
+      <p>
+        Welcome sa aking Manhwa Site. Dito mo mababasa ang mga chapters ng aking story.
+        Enjoy reading! 💜
+      </p>
+    </div>
 
-  <h2>Chapters</h2>
+    <img class="cover" src="https://via.placeholder.com/900x400" alt="cover">
 
-  <div class="chapter">Chapter 1 - Simula</div>
-  <div class="chapter">Chapter 2 - Ang Lihim</div>
-  <div class="chapter">Chapter 3 - Pagbabago</div>
+    <h2>📚 Chapters</h2>
 
-</div>
+    <div class="chapter">Chapter 1 - Simula</div>
+    <div class="chapter">Chapter 2 - Ang Lihim</div>
+    <div class="chapter">Chapter 3 - Pagbabago</div>
+
+  </div>
 
 </body>
 </html>
