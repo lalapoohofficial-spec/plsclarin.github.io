@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Manhwa Free Site</title>
+  <title>PL Manhwa Site</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: #2b2b2b;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+      color: #1f2937;
+    }
 
+    /* HEADER */
+    .header {
+      text-align: center;
+      padding: 70px 20px;
       background: url('https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
+      position: relative;
+      color: white;
     }
 
-    .overlay {
-      background: rgba(255, 255, 255, 0.75);
-      min-height: 100vh;
-      padding: 20px;
+    .header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(59,130,246,0.6);
     }
 
-    .header {
-      text-align: center;
-      padding: 60px 20px 30px;
+    .header-content {
+      position: relative;
+      z-index: 1;
     }
 
     .header h1 {
-      font-size: 48px;
-      color: #7c3aed;
+      font-size: 55px;
       margin: 0;
-      letter-spacing: 2px;
     }
 
     .header p {
@@ -38,28 +45,5 @@
       margin-top: 10px;
     }
 
+    /* CONTAINER */
     .container {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .intro {
-      background: rgba(255,255,255,0.8);
-      padding: 20px;
-      border-radius: 15px;
-      margin-bottom: 30px;
-      backdrop-filter: blur(10px);
-    }
-
-    .intro h2 {
-      margin-top: 0;
-      color: #6d28d9;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
-
-    .card
